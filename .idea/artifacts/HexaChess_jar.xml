@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HexaChess:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HexaChess_jar</output-path>
+    <root id="archive" name="HexaChess.jar">
+      <element id="module-output" name="HexaChess" />
+    </root>
+  </artifact>
+</component>
