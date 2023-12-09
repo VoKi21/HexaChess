@@ -1,7 +1,6 @@
 package chessgame;
 
 import chessgame.figures.*;
-import chessgame.util.Color;
 import chessgame.util.Position;
 
 import java.util.ArrayList;
@@ -9,7 +8,6 @@ import java.util.List;
 
 public class Field {
     private final List<Figure> field = new ArrayList<>();
-    private final String[][] cellColors = new String[11][11];
 
     public Field() {
         for (int i = 0; i < 9; i++) {
@@ -36,15 +34,6 @@ public class Field {
             field.add(new Bishop(new Position(5, i), "BLACK"));
             field.add(new Bishop(new Position(5, 10 - i), "WHITE"));
         }
-
-        String[] colors = new String[]{Color.blackBackground(), Color.greyBackground(), Color.whiteBackground()};
-        for (int y = 0; y < 11; y++) {
-            int currentColor = y < 6 ? y % 3 : 2 - Math.abs((2 - y) % 3);
-            for (int x = minInLine(y); x <= maxInLine(y); x++) {
-                cellColors[x][y] = colors[currentColor];
-                currentColor = (currentColor + 1) % 3;
-            }
-        }
     }
 
     public Figure getFigureOnPosition(Position position) {
@@ -53,26 +42,7 @@ public class Field {
                 return figure;
             }
         }
-        return new FreeCell();
-    }
-
-    public void draw() {
-        System.out.print("   ");
-        for (int i = 0; i < 11; i++) {
-            System.out.printf("%d ", i);
-        }
-        System.out.println();
-        for (int y = 0; y < 11; y++) {
-            System.out.print(y + " " + (y == 10 ? "" : " "));
-            for (int i = 0; i < minInLine(y); i++) {
-                System.out.print("  ");
-            }
-            for (int x = minInLine(y); x <= maxInLine(y); x++) {
-                Figure figure = getFigureOnPosition(new Position(x, y));
-                System.out.printf("%c[%d;%sm%s ", (char) 27, figure.getColor(), cellColors[x][y], figure.getSymbol());
-            }
-            System.out.println((char) 27 + "[m");
-        }
+        return new FreeCell(position);
     }
 
     public static int maxInLine(int line) {

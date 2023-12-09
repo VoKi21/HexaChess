@@ -5,12 +5,16 @@ import chessgame.util.Position;
 public class FreeCell extends Figure {
     private final Figures type = Figures.FREE;
 
+    public FreeCell(Position position) {
+        super(position, "");
+    }
+
     public FreeCell() {
         super(null, "");
     }
 
     @Override
-    public boolean Move() {
+    public boolean move() {
         return false;
     }
 
@@ -22,11 +26,6 @@ public class FreeCell extends Figure {
     @Override
     public Position getPosition() {
         return null;
-    }
-
-    @Override
-    public String getSymbol() {
-        return " ";
     }
 
     @Override

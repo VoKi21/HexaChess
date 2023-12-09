@@ -12,17 +12,12 @@ public class Pawn extends Figure {
     }
 
     @Override
-    public String getSymbol() {
-        return color == Color.blackFigure() ? "\uDB81\uDCE5" : "\uDB82\uDC59";
-    }
-
-    @Override
     public Figures getType() {
         return Figures.PAWN;
     }
 
     @Override
-    public boolean Move() {
+    public boolean move() {
         boolean success = false;
         for (int i = 0; i < (untouched ? 2 : 1); i++) {
             success = position.move(color == Color.blackFigure() ? Directions.BELOW : Directions.ABOVE);

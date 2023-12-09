@@ -1,6 +1,5 @@
 package chessgame.figures;
 
-import chessgame.util.Color;
 import chessgame.util.Position;
 
 public class Queen extends Figure {
@@ -9,13 +8,8 @@ public class Queen extends Figure {
     }
 
     @Override
-    public boolean Move() {
+    public boolean move() {
         return false;
-    }
-
-    @Override
-    public String getSymbol() {
-        return color == Color.blackFigure() ? "\uE26E" : "\uDB82\uDC5A";
     }
 
     @Override
