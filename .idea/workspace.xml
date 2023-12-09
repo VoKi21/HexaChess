@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="MVP: field can be drawn with all the figures. movement and players are not implemented yet">
-      <change afterPath="$PROJECT_DIR$/src/chessgame/graphics/FieldPrinter.java" afterDir="false" />
+    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Moved graphics (printing) into special class (FieldPrinter)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Bishop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Figure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" afterDir="false" />
@@ -40,6 +37,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "VoKi21"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="797cdf12-785c-44dd-9364-74b16b6cf8b6" />
+        <option name="url" value="https://github.com/VoKi21/HexaChess" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -51,19 +65,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ralen/IdeaProjects/HexaChess&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Game.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ralen/IdeaProjects/HexaChess",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="Field" />
@@ -77,6 +93,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-9b5c8e75" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,12 +118,32 @@
       <option name="project" value="LOCAL" />
       <updated>1700413841299</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Moved graphics (printing) into special class (FieldPrinter)">
+      <option name="closed" value="true" />
+      <created>1702107119200</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702107119201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="MVP: field can be drawn with all the figures. movement and players are not implemented yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVP: field can be drawn with all the figures. movement and players are not implemented yet" />
+    <MESSAGE value="Moved graphics (printing) into special class (FieldPrinter)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved graphics (printing) into special class (FieldPrinter)" />
   </component>
 </project>

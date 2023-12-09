@@ -14,11 +14,6 @@ public class FreeCell extends Figure {
     }
 
     @Override
-    public boolean move() {
-        return false;
-    }
-
-    @Override
     public int getColor() {
         return 0;
     }

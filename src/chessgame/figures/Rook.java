@@ -8,11 +8,6 @@ public class Rook extends Figure {
     }
 
     @Override
-    public boolean move() {
-        return false;
-    }
-
-    @Override
     public Figures getType() {
         return Figures.ROOK;
     }

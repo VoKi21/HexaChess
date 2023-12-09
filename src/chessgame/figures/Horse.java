@@ -8,11 +8,6 @@ public class Horse extends Figure {
     }
 
     @Override
-    public boolean move() {
-        return false;
-    }
-
-    @Override
     public Figures getType() {
         return Figures.HORSE;
     }

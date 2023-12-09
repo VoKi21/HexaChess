@@ -8,11 +8,6 @@ public class Queen extends Figure {
     }
 
     @Override
-    public boolean move() {
-        return false;
-    }
-
-    @Override
     public Figures getType() {
         return Figures.QUEEN;
     }

@@ -14,8 +14,6 @@ public abstract class Figure {
         this.position = position;
     }
 
-    public abstract boolean move();
-
     public int getColor() {
         return color;
     }
