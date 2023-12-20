@@ -37,6 +37,9 @@ public class Pawn extends Figure {
                 break;
             }
         }
+        if (untouched) {
+            untouched = false;
+        }
 
         attackingMoves = new Moves(true, this);
 
