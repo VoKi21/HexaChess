@@ -69,18 +69,7 @@ public class Horse extends Figure {
                     }
                 }
 
-                if (positionToAdd.getX() > 0) {
-                    continue;
-                }
-                if (field.getFigureOnPosition(positionToAdd).getType() == Figures.FREE) {
-                    toReturn.add(positionToAdd);
-                    continue;
-                }
-                if (field.getFigureOnPosition(positionToAdd).getColor() == this.color) {
-                    continue;
-                }
-                toReturn.add(positionToAdd);
-                attackingMoves.add(positionToAdd);
+                Moves.CheckAndAddSolePosition(positionToAdd, field, toReturn, attackingMoves, this.color);
             }
         }
         if (attackingMoves.getMovesToOnePoint().isEmpty()) {
