@@ -1,5 +1,7 @@
 package chessgame.figures;
 
+import chessgame.Field;
+import chessgame.Moves;
 import chessgame.util.Position;
 
 public class FreeCell extends Figure {
@@ -26,5 +28,10 @@ public class FreeCell extends Figure {
     @Override
     public Figures getType() {
         return type;
+    }
+
+    @Override
+    public Moves getMoves(Field field) {
+        return null;
     }
 }
