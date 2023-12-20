@@ -6,7 +6,7 @@ public class Color {
     }
 
     public static int whiteFigure() {
-        return 34;
+        return 36;
     }
 
     public static String blackBackground() {
