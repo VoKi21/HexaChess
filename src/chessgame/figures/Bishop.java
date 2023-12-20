@@ -5,7 +5,6 @@ import chessgame.Moves;
 import chessgame.util.BrittleList;
 import chessgame.util.Directions;
 import chessgame.util.Position;
-import com.sun.jdi.connect.AttachingConnector;
 
 public class Bishop extends Figure {
     public Bishop(Position position, String color) {
