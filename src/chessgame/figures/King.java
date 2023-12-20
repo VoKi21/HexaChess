@@ -2,7 +2,6 @@ package chessgame.figures;
 
 import chessgame.Field;
 import chessgame.Moves;
-import chessgame.util.BrittleList;
 import chessgame.util.Directions;
 import chessgame.util.Position;
 
