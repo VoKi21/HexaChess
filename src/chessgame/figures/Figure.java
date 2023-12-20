@@ -1,5 +1,6 @@
 package chessgame.figures;
 
+import chessgame.Moves;
 import chessgame.util.Color;
 import chessgame.util.Position;
 
@@ -23,4 +24,6 @@ public abstract class Figure {
     }
 
     public abstract Figures getType();
+
+    public abstract Moves getMoves();
 }
