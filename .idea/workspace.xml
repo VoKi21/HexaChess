@@ -9,9 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Moves class now has boolean attacking parameter">
-      <change afterPath="$PROJECT_DIR$/src/chessgame/Player.java" afterDir="false" />
+    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Added game logging and divided step to two steps: black and white">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chessgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Moves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Moves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-9b5c8e75" />
+        <option value="jdk-17.0.9-corretto-17.0.9-249ae16d76d6-7c0527ad" />
       </set>
     </attachedChunks>
   </component>
@@ -264,7 +267,55 @@
       <option name="project" value="LOCAL" />
       <updated>1703093186647</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Moves class now has a reference to the moving figure">
+      <option name="closed" value="true" />
+      <created>1703094461088</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1703094461088</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Moves class now has a reference to the moving figure">
+      <option name="closed" value="true" />
+      <created>1703095714617</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1703095714617</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added Player class and step logic">
+      <option name="closed" value="true" />
+      <created>1703095743573</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1703095743573</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Changed white color from 32 to 36, to be more visible">
+      <option name="closed" value="true" />
+      <created>1703100261010</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1703100261010</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Changed emptiness check of attacking array to use Moves.count">
+      <option name="closed" value="true" />
+      <created>1703100321717</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1703100321717</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added game logging and divided step to two steps: black and white">
+      <option name="closed" value="true" />
+      <created>1703100433719</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1703100433719</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +350,33 @@
     <MESSAGE value="Rook moves like a Bishop but straight" />
     <MESSAGE value="Queen moves like a daughter of Bishop and Rook" />
     <MESSAGE value="Moves class now has boolean attacking parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moves class now has boolean attacking parameter" />
+    <MESSAGE value="Moves class now has a reference to the moving figure" />
+    <MESSAGE value="Added Player class and step logic" />
+    <MESSAGE value="Changed white color from 32 to 36, to be more visible" />
+    <MESSAGE value="Changed emptiness check of attacking array to use Moves.count" />
+    <MESSAGE value="Added game logging and divided step to two steps: black and white" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added game logging and divided step to two steps: black and white" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="count() == 0" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/chessgame/Moves.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chessgame/Moves.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="chessgame.Moves" memberName="attacking" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
