@@ -20,8 +20,8 @@ public class Pawn extends Figure {
 
     @Override
     public Moves getMoves(Field field) {
-        Moves toReturn = new Moves(false);
-        Moves attackingMoves = new Moves(true);
+        Moves toReturn = new Moves(false, this);
+        Moves attackingMoves = new Moves(true, this);
 
         Position curr = position;
         for (int i = 0; i < (untouched ? 2 : 1); i++) {
@@ -45,7 +45,7 @@ public class Pawn extends Figure {
                 color
         );
 
-        attackingMoves = new Moves(true);
+        attackingMoves = new Moves(true, this);
 
         Directions[] attackingDirections = new Directions[2];
         if (color == Color.blackFigure()) {

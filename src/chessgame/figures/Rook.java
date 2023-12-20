@@ -18,8 +18,8 @@ public class Rook extends Figure {
 
     @Override
     public Moves getMoves(Field field) {
-        Moves toReturn = new Moves(false);
-        Moves attackingMoves = new Moves(true);
+        Moves toReturn = new Moves(false, this);
+        Moves attackingMoves = new Moves(true, this);
 
         for (int i = 0; i < 6; i++) {
             BrittleList<Position> sequenceToAdd = new BrittleList<>();

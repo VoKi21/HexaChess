@@ -1,5 +1,6 @@
 package chessgame;
 
+import chessgame.figures.Figure;
 import chessgame.figures.Figures;
 import chessgame.util.BrittleList;
 import chessgame.util.Position;
@@ -11,9 +12,11 @@ public class Moves {
     public final boolean attacking;
     private final List<Position> movesToOnePoint = new ArrayList<>();
     private final List<BrittleList<Position>> sequentialMoves = new ArrayList<>();
+    public final Figure figure;
 
-    public Moves(boolean attacking) {
+    public Moves(boolean attacking, Figure figure) {
         this.attacking = attacking;
+        this.figure = figure;
     }
 
     public Position getRandomPosition() {
