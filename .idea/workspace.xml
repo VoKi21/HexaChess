@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Removed bad movement logic prototype">
+    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Removed unused import">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +30,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "VoKi21"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VoKi21&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -67,10 +67,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ralen/IdeaProjects/HexaChess",
+    "last_opened_file_path": "/home/ralen/IdeaProjects/Testing",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -127,7 +128,111 @@
       <option name="project" value="LOCAL" />
       <updated>1702108195038</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added BrittleList class to use in sequential moves, like these Rook does">
+      <option name="closed" value="true" />
+      <created>1703083535901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703083535901</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Moves class, representing moves for a figure">
+      <option name="closed" value="true" />
+      <created>1703086249948</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086249948</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added abstract method Figure.getMoves to implement in all figure classes">
+      <option name="closed" value="true" />
+      <created>1703086313297</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086313297</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Figure.getMoves now requires Field field variable">
+      <option name="closed" value="true" />
+      <created>1703088440627</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703088440627</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FreeCell returns null as moves">
+      <option name="closed" value="true" />
+      <created>1703088478245</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703088478245</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Position.moves creates copy instead of modifying itself">
+      <option name="closed" value="true" />
+      <created>1703088525651</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703088525651</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Bishop returns up to 6 move sequences, or attacking moves, if it's not empty">
+      <option name="closed" value="true" />
+      <created>1703088774949</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703088774949</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Removed unused import">
+      <option name="closed" value="true" />
+      <created>1703088841920</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703088841920</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Horse.getMoves returns 12 discrete moves">
+      <option name="closed" value="true" />
+      <created>1703090019028</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703090019028</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added Moves.CheckAndAddSolePosition to simplify methods in figures' classes">
+      <option name="closed" value="true" />
+      <created>1703091130538</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1703091130538</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Used Moves.CheckAndAddSolePosition in Horse">
+      <option name="closed" value="true" />
+      <created>1703091217414</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703091217414</updated>
+    </task>
+    <task id="LOCAL-00015" summary="King moves in all possible directions one time per step">
+      <option name="closed" value="true" />
+      <created>1703091268530</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1703091268530</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Removed unused import">
+      <option name="closed" value="true" />
+      <created>1703091310965</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1703091310965</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +251,18 @@
     <MESSAGE value="MVP: field can be drawn with all the figures. movement and players are not implemented yet" />
     <MESSAGE value="Moved graphics (printing) into special class (FieldPrinter)" />
     <MESSAGE value="Removed bad movement logic prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed bad movement logic prototype" />
+    <MESSAGE value="Added BrittleList class to use in sequential moves, like these Rook does" />
+    <MESSAGE value="Added Moves class, representing moves for a figure" />
+    <MESSAGE value="Added abstract method Figure.getMoves to implement in all figure classes" />
+    <MESSAGE value="Figure.getMoves now requires Field field variable" />
+    <MESSAGE value="FreeCell returns null as moves" />
+    <MESSAGE value="Position.moves creates copy instead of modifying itself" />
+    <MESSAGE value="Bishop returns up to 6 move sequences, or attacking moves, if it's not empty" />
+    <MESSAGE value="Horse.getMoves returns 12 discrete moves" />
+    <MESSAGE value="Added Moves.CheckAndAddSolePosition to simplify methods in figures' classes" />
+    <MESSAGE value="Used Moves.CheckAndAddSolePosition in Horse" />
+    <MESSAGE value="King moves in all possible directions one time per step" />
+    <MESSAGE value="Removed unused import" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused import" />
   </component>
 </project>

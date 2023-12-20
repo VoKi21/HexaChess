@@ -17,8 +17,9 @@ public class King extends Figure {
 
     @Override
     public Moves getMoves(Field field) {
-        Moves toReturn = new Moves();
-        Moves attackingMoves = new Moves();
+        Moves toReturn = new Moves(false);
+        Moves attackingMoves = new Moves(true);
+
         for (int i = 0; i < 6; i++) {
             Position positionToAdd = this.position;
             switch (i / 2) {

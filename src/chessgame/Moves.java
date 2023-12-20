@@ -8,8 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Moves {
+    public final boolean attacking;
     private final List<Position> movesToOnePoint = new ArrayList<>();
     private final List<BrittleList<Position>> sequentialMoves = new ArrayList<>();
+
+    public Moves(boolean attacking) {
+        this.attacking = attacking;
+    }
 
     public Position getRandomPosition() {
         int number = (int) Math.floor(Math.random() * (count() + 1));
