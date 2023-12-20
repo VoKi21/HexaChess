@@ -14,6 +14,8 @@ public class Field {
     private final Player whitePlayer = new Player(Color.whiteFigure());
     private final Player blackPlayer = new Player(Color.blackFigure());
 
+    private boolean nowBlackStep = false;
+
     public Field() {
         for (int i = 0; i < 9; i++) {
             blackFigures.add(new Pawn(new Position(i + 1, Math.min(i, 4)), "BLACK"));
@@ -42,20 +44,22 @@ public class Field {
     }
 
     public boolean step() {
-        blackPlayer.step(this);
-        int gameState = checkGameOver();
-        if (gameState != 0) {
-            return false;
+        if (nowBlackStep) {
+            blackPlayer.step(this);
+
+            nowBlackStep = false;
+            return checkGameOver() == 0;
+        } else {
+            whitePlayer.step(this);
+
+            nowBlackStep = true;
+            return checkGameOver() == 0;
         }
-
-        whitePlayer.step(this);
-        gameState = checkGameOver();
-
-        return gameState == 0;
     }
 
     public void move(Figure figure, Position position) {
         figure.setPosition(position);
+        System.out.println(figure.getType() + " to " + position.getX() + "." + position.getY());
     }
 
     public void kill(Figure figure, Position position) {
@@ -66,6 +70,7 @@ public class Field {
             whiteFigures.remove(killed);
         }
         move(figure, position);
+        System.out.println(figure.getType() + " kills to " + killed.getType() + ".");
     }
 
     private int checkGameOver() { //0 - not a gameover, 1 - white, 2 - black
@@ -88,8 +93,10 @@ public class Field {
             return 0;
         }
         if (whiteHasKing) {
+            System.out.println("WHITE WIN");
             return 1;
         }
+        System.out.println("BLACK WIN");
         return 2;
     }
 
