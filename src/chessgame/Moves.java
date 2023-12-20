@@ -7,6 +7,7 @@ import chessgame.util.Position;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Moves {
     public final boolean attacking;
@@ -20,11 +21,17 @@ public class Moves {
     }
 
     public Position getRandomPosition() {
-        int number = (int) Math.floor(Math.random() * (count() + 1));
+        Random random = new Random();
+        int number = random.nextInt(count());
 
-        number -= movesToOnePoint.size();
-        if (number < 0) {
-            return movesToOnePoint.get(movesToOnePoint.size() + number);
+        if (!movesToOnePoint.isEmpty()) {
+            number -= movesToOnePoint.size();
+            if (number == 0) {
+                return movesToOnePoint.get(0);
+            }
+            if (number < 0) {
+                return movesToOnePoint.get(movesToOnePoint.size() + number);
+            }
         }
 
         for (BrittleList<Position> sequence : sequentialMoves) {
@@ -71,9 +78,6 @@ public class Moves {
             int color
     ) {
         if (positionToAdd.getX() < 0) {
-            return;
-        }
-        if (positionToAdd.getX() > 0) {
             return;
         }
         if (field.getFigureOnPosition(positionToAdd).getType() == Figures.FREE) {

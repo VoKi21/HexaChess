@@ -15,7 +15,7 @@ public class Player {
 
     public void step(Field field) {
         List<Moves> moves = getAllMoves(field);
-        Moves randomMove = moves.get((int) (Math.random() * (moves.size() + 1)));
+        Moves randomMove = moves.get((int) Math.floor(Math.random() * (moves.size())));
         if (randomMove.attacking) {
             field.kill(randomMove.figure, randomMove.getRandomPosition());
         } else {
@@ -26,7 +26,10 @@ public class Player {
     public List<Moves> getAllMoves(Field field) {
         List<Moves> result = new ArrayList<>();
         for (Figure figure : getFigures(field)) {
-            result.add(figure.getMoves(field));
+            Moves curr = figure.getMoves(field);
+            if (curr.count() != 0) {
+                result.add(figure.getMoves(field));
+            }
         }
 
         if (
