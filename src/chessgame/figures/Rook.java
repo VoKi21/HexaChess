@@ -29,27 +29,27 @@ public class Rook extends Figure {
                 switch (i) {
                     case 0 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.ABOVE);
+                                .getMovedPosition(Directions.ABOVE);
                     }
                     case 1 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.LEFTABOVE);
+                                .getMovedPosition(Directions.LEFTABOVE);
                     }
                     case 2 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.RIGHTABOVE);
+                                .getMovedPosition(Directions.RIGHTABOVE);
                     }
                     case 3 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.LEFTBELOW);
+                                .getMovedPosition(Directions.LEFTBELOW);
                     }
                     case 4 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.RIGHTBELOW);
+                                .getMovedPosition(Directions.RIGHTBELOW);
                     }
                     case 5 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.BELOW);
+                                .getMovedPosition(Directions.BELOW);
                     }
                 }
                 if (positionToAdd.getX() < 0) {

@@ -25,25 +25,25 @@ public class King extends Figure {
             switch (i / 2) {
                 case 0 -> {
                     positionToAdd = positionToAdd
-                            .move(Directions.LEFTABOVE)
-                            .move(i % 2 == 0 ? Directions.LEFTBELOW : Directions.ABOVE);
+                            .getMovedPosition(Directions.LEFTABOVE)
+                            .getMovedPosition(i % 2 == 0 ? Directions.LEFTBELOW : Directions.ABOVE);
                 }
                 case 1 -> {
                     positionToAdd = positionToAdd
-                            .move(Directions.RIGHTABOVE)
-                            .move(i % 2 == 0 ? Directions.ABOVE : Directions.RIGHTBELOW);
+                            .getMovedPosition(Directions.RIGHTABOVE)
+                            .getMovedPosition(i % 2 == 0 ? Directions.ABOVE : Directions.RIGHTBELOW);
                 }
                 case 2 -> {
                     positionToAdd = positionToAdd
-                            .move(Directions.BELOW)
-                            .move(i % 2 == 0 ? Directions.RIGHTBELOW : Directions.LEFTBELOW);
+                            .getMovedPosition(Directions.BELOW)
+                            .getMovedPosition(i % 2 == 0 ? Directions.RIGHTBELOW : Directions.LEFTBELOW);
                 }
             }
             Moves.CheckAndAddSolePosition(positionToAdd, field, toReturn, attackingMoves, this.color);
         }
 
         for (Directions direction : Directions.values()) {
-            Position positionToAdd = position.move(direction);
+            Position positionToAdd = position.getMovedPosition(direction);
             Moves.CheckAndAddSolePosition(positionToAdd, field, toReturn, attackingMoves, this.color);
         }
 

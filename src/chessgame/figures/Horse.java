@@ -27,45 +27,45 @@ public class Horse extends Figure {
                 switch (i / 2) {
                     case 0 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.LEFTABOVE)
-                                .move(i % 2 == 0 ? Directions.LEFTBELOW  : Directions.ABOVE);
+                                .getMovedPosition(Directions.LEFTABOVE)
+                                .getMovedPosition(i % 2 == 0 ? Directions.LEFTBELOW  : Directions.ABOVE);
                     }
                     case 1 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.RIGHTABOVE)
-                                .move(i % 2 == 0 ? Directions.ABOVE      : Directions.RIGHTBELOW);
+                                .getMovedPosition(Directions.RIGHTABOVE)
+                                .getMovedPosition(i % 2 == 0 ? Directions.ABOVE      : Directions.RIGHTBELOW);
                     }
                     case 2 -> {
                         positionToAdd = positionToAdd
-                                .move(Directions.BELOW)
-                                .move(i % 2 == 0 ? Directions.RIGHTBELOW : Directions.LEFTBELOW);
+                                .getMovedPosition(Directions.BELOW)
+                                .getMovedPosition(i % 2 == 0 ? Directions.RIGHTBELOW : Directions.LEFTBELOW);
                     }
                 }
 
                 switch (i) {
                     case 0 -> {
                         positionToAdd = positionToAdd
-                                .move(j == 0 ? Directions.LEFTBELOW : Directions.LEFTABOVE);
+                                .getMovedPosition(j == 0 ? Directions.LEFTBELOW : Directions.LEFTABOVE);
                     }
                     case 1 -> {
                         positionToAdd = positionToAdd
-                                .move(j == 0 ? Directions.LEFTABOVE : Directions.ABOVE);
+                                .getMovedPosition(j == 0 ? Directions.LEFTABOVE : Directions.ABOVE);
                     }
                     case 2 -> {
                         positionToAdd = positionToAdd
-                                .move(j == 0 ? Directions.ABOVE : Directions.RIGHTABOVE);
+                                .getMovedPosition(j == 0 ? Directions.ABOVE : Directions.RIGHTABOVE);
                     }
                     case 3 -> {
                         positionToAdd = positionToAdd
-                                .move(j == 0 ? Directions.RIGHTABOVE : Directions.RIGHTBELOW);
+                                .getMovedPosition(j == 0 ? Directions.RIGHTABOVE : Directions.RIGHTBELOW);
                     }
                     case 4 -> {
                         positionToAdd = positionToAdd
-                                .move(j == 0 ? Directions.RIGHTBELOW : Directions.BELOW);
+                                .getMovedPosition(j == 0 ? Directions.RIGHTBELOW : Directions.BELOW);
                     }
                     case 5 -> {
                         positionToAdd = positionToAdd
-                                .move(j == 0 ? Directions.BELOW : Directions.LEFTBELOW);
+                                .getMovedPosition(j == 0 ? Directions.BELOW : Directions.LEFTBELOW);
                     }
                 }
 

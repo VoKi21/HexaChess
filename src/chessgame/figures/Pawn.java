@@ -25,7 +25,7 @@ public class Pawn extends Figure {
 
         Position curr = position;
         for (int i = 0; i < (untouched ? 2 : 1); i++) {
-            curr = curr.move(color == Color.blackFigure() ? Directions.BELOW : Directions.ABOVE);
+            curr = curr.getMovedPosition(color == Color.blackFigure() ? Directions.BELOW : Directions.ABOVE);
             Moves.CheckAndAddSolePosition(
                 curr,
                 field,
@@ -38,7 +38,7 @@ public class Pawn extends Figure {
             }
         }
         Moves.CheckAndAddSolePosition(
-                position.move(color == Color.blackFigure() ? Directions.BELOW : Directions.ABOVE),
+                position.getMovedPosition(color == Color.blackFigure() ? Directions.BELOW : Directions.ABOVE),
                 field,
                 toReturn,
                 attackingMoves,
@@ -57,7 +57,7 @@ public class Pawn extends Figure {
         }
 
         for (Directions direction : attackingDirections) {
-            Position positionToAdd = position.move(direction);
+            Position positionToAdd = position.getMovedPosition(direction);
             Figure figure = field.getFigureOnPosition(positionToAdd);
             if (figure.getType() != Figures.FREE && figure.getColor() != this.color) {
                 attackingMoves.add(positionToAdd);
