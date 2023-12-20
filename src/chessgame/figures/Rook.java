@@ -79,7 +79,7 @@ public class Rook extends Figure {
                 toReturn.add(sequenceToAdd);
             }
         }
-        if (attackingMoves.getMovesToOnePoint().isEmpty()) {
+        if (attackingMoves.count() == 0) {
             return toReturn;
         } else {
             return attackingMoves;

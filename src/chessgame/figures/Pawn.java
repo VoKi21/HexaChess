@@ -37,13 +37,6 @@ public class Pawn extends Figure {
                 break;
             }
         }
-        Moves.CheckAndAddSolePosition(
-                position.getMovedPosition(color == Color.blackFigure() ? Directions.BELOW : Directions.ABOVE),
-                field,
-                toReturn,
-                attackingMoves,
-                color
-        );
 
         attackingMoves = new Moves(true, this);
 
@@ -64,7 +57,7 @@ public class Pawn extends Figure {
             }
         }
 
-        if (attackingMoves.getMovesToOnePoint().isEmpty()) {
+        if (attackingMoves.count() == 0) {
             return toReturn;
         } else {
             return attackingMoves;

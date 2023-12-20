@@ -47,7 +47,7 @@ public class King extends Figure {
             Moves.CheckAndAddSolePosition(positionToAdd, field, toReturn, attackingMoves, this.color);
         }
 
-        if (attackingMoves.getMovesToOnePoint().isEmpty()) {
+        if (attackingMoves.count() == 0) {
             return toReturn;
         } else {
             return attackingMoves;

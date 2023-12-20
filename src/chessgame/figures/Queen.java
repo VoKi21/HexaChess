@@ -132,7 +132,7 @@ public class Queen extends Figure {
             }
         }
 
-        if (attackingMoves.getMovesToOnePoint().isEmpty()) {
+        if (attackingMoves.count() == 0) {
             return toReturn;
         } else {
             return attackingMoves;
