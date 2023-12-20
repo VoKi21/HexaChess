@@ -15,7 +15,12 @@ public class Position {
     public int getY() {
         return y;
     }
-    public Position move(Directions direction) {
+
+    public void move(Position newPosition) {
+        this.x = newPosition.getX();
+        this.y = newPosition.getY();
+    }
+    public Position getMovedPosition(Directions direction) {
         switch (direction) {
             case ABOVE -> {
                 if (!(y == Field.minInLine(x))) {

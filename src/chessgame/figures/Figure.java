@@ -23,6 +23,9 @@ public abstract class Figure {
     public Position getPosition() {
         return position;
     }
+    public void setPosition(Position position) {
+        this.position.move(position);
+    }
 
     public abstract Figures getType();
 
