@@ -1,5 +1,6 @@
 package chessgame;
 
+import chessgame.figures.Figures;
 import chessgame.util.BrittleList;
 import chessgame.util.Position;
 
@@ -52,5 +53,29 @@ public class Moves {
 
     public List<BrittleList<Position>> getSequentialMoves() {
         return sequentialMoves;
+    }
+
+    public static void CheckAndAddSolePosition(
+            Position positionToAdd,
+            Field field,
+            Moves toReturn,
+            Moves attackingMoves,
+            int color
+    ) {
+        if (positionToAdd.getX() < 0) {
+            return;
+        }
+        if (positionToAdd.getX() > 0) {
+            return;
+        }
+        if (field.getFigureOnPosition(positionToAdd).getType() == Figures.FREE) {
+            toReturn.add(positionToAdd);
+            return;
+        }
+        if (field.getFigureOnPosition(positionToAdd).getColor() == color) {
+            return;
+        }
+        toReturn.add(positionToAdd);
+        attackingMoves.add(positionToAdd);
     }
 }
