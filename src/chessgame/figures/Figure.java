@@ -1,5 +1,6 @@
 package chessgame.figures;
 
+import chessgame.Field;
 import chessgame.Moves;
 import chessgame.util.Color;
 import chessgame.util.Position;
@@ -25,5 +26,5 @@ public abstract class Figure {
 
     public abstract Figures getType();
 
-    public abstract Moves getMoves();
+    public abstract Moves getMoves(Field field);
 }
