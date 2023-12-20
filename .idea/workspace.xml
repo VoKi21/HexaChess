@@ -9,16 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Moved graphics (printing) into special class (FieldPrinter)">
+    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Removed bad movement logic prototype">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Horse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Field.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702107119201</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed bad movement logic prototype">
+      <option name="closed" value="true" />
+      <created>1702108195038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702108195038</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +145,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="MVP: field can be drawn with all the figures. movement and players are not implemented yet" />
     <MESSAGE value="Moved graphics (printing) into special class (FieldPrinter)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved graphics (printing) into special class (FieldPrinter)" />
+    <MESSAGE value="Removed bad movement logic prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed bad movement logic prototype" />
   </component>
 </project>
