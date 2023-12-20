@@ -46,15 +46,12 @@ public class Field {
     public boolean step() {
         if (nowBlackStep) {
             blackPlayer.step(this);
-
             nowBlackStep = false;
-            return checkGameOver() == 0;
         } else {
             whitePlayer.step(this);
-
             nowBlackStep = true;
-            return checkGameOver() == 0;
         }
+        return checkGameOver() == 0;
     }
 
     public void move(Figure figure, Position position) {
