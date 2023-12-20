@@ -46,13 +46,13 @@ public class Moves {
 
     public int count() {
         return movesToOnePoint.size() + countInSequentialMoves();
-    };
+    }
     public int countInSequentialMoves() {
         return sequentialMoves
                 .stream()
                 .map(BrittleList::size)
                 .reduce(0, Integer::sum);
-    };
+    }
 
     public void add(Position position) {
         movesToOnePoint.add(position);

@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Added game logging and divided step to two steps: black and white">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Moves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Moves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Player.java" afterDir="false" />
+    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Game in while loop, without sleep() or timer">
+      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +46,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -315,7 +315,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703100433719</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fixed bug of 0 moves">
+      <option name="closed" value="true" />
+      <created>1703100495931</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1703100495931</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Game in while loop, without sleep() or timer">
+      <option name="closed" value="true" />
+      <created>1703100568015</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1703100568015</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,7 +347,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="MVP: field can be drawn with all the figures. movement and players are not implemented yet" />
     <MESSAGE value="Moved graphics (printing) into special class (FieldPrinter)" />
     <MESSAGE value="Removed bad movement logic prototype" />
     <MESSAGE value="Added BrittleList class to use in sequential moves, like these Rook does" />
@@ -355,7 +370,9 @@
     <MESSAGE value="Changed white color from 32 to 36, to be more visible" />
     <MESSAGE value="Changed emptiness check of attacking array to use Moves.count" />
     <MESSAGE value="Added game logging and divided step to two steps: black and white" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added game logging and divided step to two steps: black and white" />
+    <MESSAGE value="Fixed bug of 0 moves" />
+    <MESSAGE value="Game in while loop, without sleep() or timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game in while loop, without sleep() or timer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,11 +382,6 @@
           <url>file://$PROJECT_DIR$/src/chessgame/Moves.java</url>
           <line>23</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/chessgame/Moves.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

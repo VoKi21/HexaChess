@@ -74,8 +74,6 @@ public class Field {
     }
 
     private int checkGameOver() { //0 - not a gameover, 1 - white, 2 - black
-        int result = 0;
-
         boolean whiteHasKing = false;
         for (Figure figure : whiteFigures) {
             if (figure.getType() == Figures.KING) {

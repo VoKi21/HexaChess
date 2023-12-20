@@ -11,10 +11,6 @@ public class FreeCell extends Figure {
         super(position, "");
     }
 
-    public FreeCell() {
-        super(null, "");
-    }
-
     @Override
     public int getColor() {
         return 0;
