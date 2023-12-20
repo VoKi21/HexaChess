@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Game in while loop, without sleep() or timer">
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/FreeCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/figures/Pawn.java" afterDir="false" />
+    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Applied suggestions of IDE like removing variables etc. (but only wise ones!)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +330,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703100568015</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Pawn now actually changes it's untouched state when being touched">
+      <option name="closed" value="true" />
+      <created>1703100991730</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1703100991730</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Applied suggestions of IDE like removing variables etc. (but only wise ones!)">
+      <option name="closed" value="true" />
+      <created>1703101056829</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1703101056829</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,8 +362,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Moved graphics (printing) into special class (FieldPrinter)" />
-    <MESSAGE value="Removed bad movement logic prototype" />
     <MESSAGE value="Added BrittleList class to use in sequential moves, like these Rook does" />
     <MESSAGE value="Added Moves class, representing moves for a figure" />
     <MESSAGE value="Added abstract method Figure.getMoves to implement in all figure classes" />
@@ -372,7 +385,9 @@
     <MESSAGE value="Added game logging and divided step to two steps: black and white" />
     <MESSAGE value="Fixed bug of 0 moves" />
     <MESSAGE value="Game in while loop, without sleep() or timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game in while loop, without sleep() or timer" />
+    <MESSAGE value="Pawn now actually changes it's untouched state when being touched" />
+    <MESSAGE value="Applied suggestions of IDE like removing variables etc. (but only wise ones!)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Applied suggestions of IDE like removing variables etc. (but only wise ones!)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

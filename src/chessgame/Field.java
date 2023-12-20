@@ -70,7 +70,7 @@ public class Field {
             whiteFigures.remove(killed);
         }
         move(figure, position);
-        System.out.println(figure.getType() + " kills to " + killed.getType() + ".");
+        System.out.println(figure.getType() + " kills " + killed.getType() + ".");
     }
 
     private int checkGameOver() { //0 - not a gameover, 1 - white, 2 - black
