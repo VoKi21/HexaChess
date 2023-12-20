@@ -15,49 +15,42 @@ public class Position {
     public int getY() {
         return y;
     }
-    public boolean move(Directions direction) {
+    public Position move(Directions direction) {
         switch (direction) {
             case ABOVE -> {
-                if (y == Field.minInLine(x)) {
-                    return false;
+                if (!(y == Field.minInLine(x))) {
+                    return new Position(x, y - 1);
                 }
-                y--;
             }
             case LEFTABOVE -> {
-                if (y == Field.minInLine(x) || x == Field.minInLine(y)) {
-                    return false;
+                if (!(y == Field.minInLine(x) || x == Field.minInLine(y))) {
+                    return new Position(x - 1, y - 1);
                 }
-                y--;
-                x--;
             }
             case LEFTBELOW -> {
-                if (x == Field.minInLine(y)) {
-                    return false;
+                if (!(x == Field.minInLine(y))) {
+                    return new Position(x - 1, y);
                 }
-                x--;
             }
             case BELOW -> {
-                if (y == Field.maxInLine(x)) {
-                    return false;
+                if (!(y == Field.maxInLine(x))) {
+                    return new Position(x, y + 1);
                 }
-                y++;
             }
             case RIGHTBELOW -> {
-                if (y == Field.maxInLine(x) || x == Field.maxInLine(y)) {
-                    return false;
+                if (!(y == Field.maxInLine(x) || x == Field.maxInLine(y))) {
+                    return new Position(x + 1, y + 1);
                 }
-                y++;
-                x++;
             }
             case RIGHTABOVE -> {
-                if (x == Field.maxInLine(y)) {
-                    return false;
+                if (!(x == Field.maxInLine(y))) {
+                    return new Position(x + 1, y);
                 }
-                x++;
             }
         }
-        return true;
+        return new Position(-20, -20);
     }
+
     public boolean equals(Position other) {
         return this.getX() == other.getX() && this.getY() == other.getY();
     }
