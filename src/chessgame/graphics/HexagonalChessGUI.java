@@ -130,14 +130,25 @@ public class HexagonalChessGUI extends JFrame {
 
     private void drawAllFigures(List<FigureRecord> figures) {
         for (FigureRecord figure : figures) {
-            int x = figure.getPosition().getX() * 60 + 76; // Replace with actual x-coordinate calculation
-            int y = figure.getPosition().getY() * 70 - figure.getPosition().getX() * 35 + 220; // Replace with actual y-coordinate calculation
+            int x = figure.getPosition().getX() * 60 + 76;
+            int y = figure.getPosition().getY() * 70 - figure.getPosition().getX() * 35 + 220;
 
             String pieceImageFileName = getImageFileName(figure.getColor(), figure.getType());
             BufferedImage pieceImage;
             try {
                 pieceImage = ImageIO.read(new File("resources/" + pieceImageFileName));
-                this.getGraphics().drawImage(pieceImage.getScaledInstance(50, 50, Image.SCALE_SMOOTH), x, y, this);
+                this.
+                        getGraphics().
+                        drawImage(
+                        pieceImage.
+                                getScaledInstance(
+                        50,
+                        50,
+                        Image.SCALE_SMOOTH
+                                ),
+                                x,
+                                y,
+                                this);
             } catch (IOException e) {
                 e.printStackTrace();
             }
