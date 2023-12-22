@@ -16,6 +16,8 @@ public class Field {
 
     private boolean nowBlackStep = false;
 
+    private boolean gameOver = false;
+
     public Field() {
         for (int i = 0; i < 9; i++) {
             blackFigures.add(new Pawn(new Position(i + 1, Math.min(i, 4)), "BLACK"));
@@ -43,7 +45,7 @@ public class Field {
         }
     }
 
-    public boolean step() {
+    public void step() {
         if (nowBlackStep) {
             blackPlayer.step(this);
             nowBlackStep = false;
@@ -51,7 +53,7 @@ public class Field {
             whitePlayer.step(this);
             nowBlackStep = true;
         }
-        return checkGameOver() == 0;
+        gameOver = checkGameOver() != 0;
     }
 
     public void move(Figure figure, Position position) {
@@ -123,5 +125,9 @@ public class Field {
 
     public List<Figure> getBlackFigures() {
         return blackFigures;
+    }
+
+    public boolean isGameOver() {
+        return gameOver;
     }
 }
