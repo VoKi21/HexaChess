@@ -19,6 +19,14 @@ public class Pawn extends Figure {
     }
 
     @Override
+    public void setPosition(Position position) {
+        if (untouched) {
+            untouched = false;
+        }
+        super.setPosition(position);
+    }
+
+    @Override
     public Moves getMoves(Field field) {
         Moves toReturn = new Moves(false, this);
         Moves attackingMoves = new Moves(true, this);
@@ -36,9 +44,6 @@ public class Pawn extends Figure {
             if (toReturn.getMovesToOnePoint().isEmpty() || !attackingMoves.getMovesToOnePoint().isEmpty()) {
                 break;
             }
-        }
-        if (untouched) {
-            untouched = false;
         }
 
         attackingMoves = new Moves(true, this);

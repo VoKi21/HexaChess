@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Applied suggestions of IDE like removing variables etc. (but only wise ones!)">
+    <list default="true" id="e8bdb888-4017-4a77-a792-f94b4bb2f42a" name="Changes" comment="Extracted common part in Field.step()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -346,7 +346,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703101056829</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Fixed typo (kills to instead of just kills)">
+      <option name="closed" value="true" />
+      <created>1703103232675</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1703103232675</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Extracted common part in Field.step()">
+      <option name="closed" value="true" />
+      <created>1703103292996</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1703103292996</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -362,8 +378,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added BrittleList class to use in sequential moves, like these Rook does" />
-    <MESSAGE value="Added Moves class, representing moves for a figure" />
     <MESSAGE value="Added abstract method Figure.getMoves to implement in all figure classes" />
     <MESSAGE value="Figure.getMoves now requires Field field variable" />
     <MESSAGE value="FreeCell returns null as moves" />
@@ -387,19 +401,11 @@
     <MESSAGE value="Game in while loop, without sleep() or timer" />
     <MESSAGE value="Pawn now actually changes it's untouched state when being touched" />
     <MESSAGE value="Applied suggestions of IDE like removing variables etc. (but only wise ones!)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Applied suggestions of IDE like removing variables etc. (but only wise ones!)" />
+    <MESSAGE value="Fixed typo (kills to instead of just kills)" />
+    <MESSAGE value="Extracted common part in Field.step()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extracted common part in Field.step()" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="count() == 0" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/chessgame/Moves.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="chessgame.Moves" memberName="attacking" />
