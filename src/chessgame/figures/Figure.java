@@ -34,4 +34,7 @@ public abstract class Figure {
     public String getColorName() {
         return this.color == Color.blackFigure() ? "BLACK " : "WHITE ";
     }
+    public FigureRecord getRecord() {
+        return new FigureRecord(getType(), this.color, new Position(position.getX(), position.getY()));
+    }
 }
