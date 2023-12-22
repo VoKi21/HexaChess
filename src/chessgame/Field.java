@@ -56,7 +56,7 @@ public class Field {
 
     public void move(Figure figure, Position position) {
         figure.setPosition(position);
-        System.out.println(figure.getType() + " to " + position.getX() + "." + position.getY());
+        System.out.println(figure.getColorName() + figure.getType() + " to " + position.getX() + "." + position.getY());
     }
 
     public void kill(Figure figure, Position position) {
@@ -67,7 +67,7 @@ public class Field {
             whiteFigures.remove(killed);
         }
         move(figure, position);
-        System.out.println(figure.getType() + " kills " + killed.getType() + ".");
+        System.out.println(figure.getColorName() + figure.getType() + " kills " + killed.getColorName() + killed.getType() + ".");
     }
 
     private int checkGameOver() { //0 - not a gameover, 1 - white, 2 - black

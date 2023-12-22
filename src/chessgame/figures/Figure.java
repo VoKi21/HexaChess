@@ -30,4 +30,8 @@ public abstract class Figure {
     public abstract Figures getType();
 
     public abstract Moves getMoves(Field field);
+
+    public String getColorName() {
+        return this.color == Color.blackFigure() ? "BLACK " : "WHITE ";
+    }
 }
