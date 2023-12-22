@@ -63,6 +63,7 @@ public class HexagonalChessGUI extends JFrame {
             redraw();
             if (field.isGameOver() && history.inTheEnd()) {
                 timer[0].stop();
+                pause = true;
                 redraw();
             }
         });
@@ -96,6 +97,9 @@ public class HexagonalChessGUI extends JFrame {
 
         playStopButton.addActionListener(e -> {
             if (history.inTheEnd() && field.isGameOver()) {
+                pause = true;
+                playStopButton.setText("Resume");
+                System.out.println("eouthdi");
                 return;
             }
             pause = !pause;
