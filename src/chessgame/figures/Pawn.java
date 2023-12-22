@@ -34,13 +34,13 @@ public class Pawn extends Figure {
         Position curr = position;
         for (int i = 0; i < (untouched ? 2 : 1); i++) {
             curr = curr.getMovedPosition(color == Color.blackFigure() ? Directions.BELOW : Directions.ABOVE);
-            Moves.CheckAndAddSolePosition(
-                curr,
-                field,
-                toReturn,
-                attackingMoves,
-                color
-            );
+            if (curr.getX() < 0) {
+                continue;
+            }
+            if (field.getFigureOnPosition(curr).getType() == Figures.FREE) {
+                toReturn.add(curr);
+                continue;
+            }
             if (toReturn.getMovesToOnePoint().isEmpty() || !attackingMoves.getMovesToOnePoint().isEmpty()) {
                 break;
             }
