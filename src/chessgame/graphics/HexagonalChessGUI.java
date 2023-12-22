@@ -99,7 +99,6 @@ public class HexagonalChessGUI extends JFrame {
             if (history.inTheEnd() && field.isGameOver()) {
                 pause = true;
                 playStopButton.setText("Resume");
-                System.out.println("eouthdi");
                 return;
             }
             pause = !pause;
