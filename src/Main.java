@@ -1,14 +1,9 @@
 import chessgame.Field;
-import chessgame.graphics.FieldPrinter;
+import chessgame.graphics.HexagonalChessGUI;
 
 public class Main {
     public static void main(String[] args) {
         Field field = new Field();
-        boolean result = true;
-        while (result) {
-            FieldPrinter.printField(field);
-            result = field.step();
-        }
-        FieldPrinter.printField(field);
+        new HexagonalChessGUI(field);
     }
 }
